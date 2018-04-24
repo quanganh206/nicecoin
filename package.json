@@ -1,0 +1,43 @@
+{
+  "name": "nicecoin",
+  "version": "1.0.0",
+  "description": "NiceCoin demo coin for all of my products",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch & nodemon dist",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "lint": "eslint src --ext ts",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quanganh206/nicecoin.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "nicecoin",
+    "blockchain"
+  ],
+  "author": "quanganh@aiti.com.vn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quanganh206/nicecoin/issues"
+  },
+  "homepage": "https://github.com/quanganh206/nicecoin#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^9.6.6",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "mocha": "^5.1.1",
+    "supertest": "^3.0.0",
+    "typescript": "^2.8.3",
+    "typescript-eslint-parser": "^15.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
+}
