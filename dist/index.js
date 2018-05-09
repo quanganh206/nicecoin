@@ -32,10 +32,9 @@ wss.on('connection', (ws) => {
         ws.send(`Hello, you sent -> ${message}`);
     });
     //send immediatly a feedback to the incoming connection    
-    ws.send('Hi there, I am a WebSocket server');
+    ws.send('Hi there, I am a WebSocket server hehe');
 });
 //start our server
 server.listen(process.env.PORT || 8999, () => {
-    console.log(`Server started on port ${server.address().port} :)`);
+    console.log(`Server started on port ${server.address().port}`);
 });
-//# sourceMappingURL=index.js.map
